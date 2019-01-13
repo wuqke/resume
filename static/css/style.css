@@ -191,7 +191,7 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('https://avatars0.githubusercontent.com/u/21081491?v=3&s=460');
+    background-image:url('../image/walle.jpg');
     background-size: 120%;
     background-position:center;
     border-radius:50%;
@@ -266,6 +266,44 @@ progress::-moz-progress-value {
 ul li{
     position: relative;
 }
+
+
+
+.sub-container {
+    position: relative;
+    margin: 0 auto;
+    width: 620px;
+    margin-top: 10px;
+}
+.company-div{
+    margin-left: 14px;
+    font-size:20px;
+    color: #607d8b;
+    line-height: 1.5;
+    font-weight:bold;
+}
+
+.sub-title {
+    font-weight:bold;
+    font-size:18px;
+    margin-top: 10px;
+
+}
+.sub-side {
+    position: absolute;
+    width: 70px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.sub-main {
+    position: relative;;
+    margin-left: 75px;
+    min-height: 100%;
+    font-size:16px;
+
+}
+
 
  .experience-list .item-remove {
     position: absolute;

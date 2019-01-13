@@ -3,202 +3,277 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>简历生成器</title>
+    <title>wuqke's resume</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
 </head>
-
 <body>
-    <div class="container" id="cv">
-        <div class="side">
-            <div class="me">
-                <div class="portrait"></div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
-                    <h3>请输入图片URL地址：</h3>
-                    <br/>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
-                <h1 id="username" >ekCit</h1>
-                <h4 id="persona-tag" >Python / Web / 互联网教育</h4>
-            </div>
-            <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">姓名</label><span class="label-value">XXX</span></li>
-                    <li>
-                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
-                    <li>
-                        <label class="left-label">毕业院校</label><span class="label-value">北京邮电大学</span></li>
-                    <li>
-                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
-                </ul>
-            </div>
-            <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">手机</label><span class="label-value">182XXXXXXXX</span></li>
-                    <li>
-                        <label class="left-label">邮箱</label><span class="label-value">crmrc2014@gmail.com</span></li>
-                    <li>
-                        <label class="left-label">个人主页</label><span class="label-value">exit-tixe.me</span></li>
-                    <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/ekCit</span></li>
-                </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
-                <hr>
-                <ul class="progress-list">
-                    <li>
-                        <label class="left-label">Python</label>
-                        <progress value="80" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">html/css</label>
-                        <progress value="70" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">Javascript</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">机器学习</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                </ul>
-            </div>
-            <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
-                <hr>
-                <ul class="stack-list">
-                    <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、Angular.js、React.js</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">后端</label><span class="label-value">Flask、Django、Twisted、Node.js、MongoDB、MySQL、Redis</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">其它</label><span class="label-value">我全都是瞎写的。</span></li>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
-                <hr>
-                <div class="weixin">
-                    <img src="static/image/weixin.png" alt="">
-
-                </div>
-            </div>
-            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
-                <h3>请输入图片URL地址：</h3>
-                <br/>
-                <input type="text" id="weixin-url">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div>
+<div class="container" id="cv">
+    <div class="side">
+        <div class="me">
+            <div class="portrait"></div>
+            <h1 id="username">伍琼珂</h1>
+            <h4 id="persona-tag">Java / 后台 / 金融科技</h4>
         </div>
-        <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>北京邮电大学 - 网络工程专业（本科）2012-2017</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>北京创客空间－实习生（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>实验楼－课程内容（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                </ul class="experience-list">
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>基于 Qt 5 的文本编辑器</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="profile info-unit">
+            <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+            <hr>
+            <ul class="info-list">
+                <li>
+                    <label class="left-label">求职岗位</label><span class="label-value">后台工程师</span></li>
+                <li>
+                    <label class="left-label">性别</label><span class="label-value">男</span></li>
+                <li>
+                    <label class="left-label">工作年限</label><span class="label-value">4年</span></li>
+                <li>
+                    <label class="left-label">现居住地</label><span class="label-value">深圳</span></li>
+            </ul>
+        </div>
+        <div class="code info-unit">
+            <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育</span></h2>
+            <hr>
+            <ul class="stack-list">
+                <li>
+                    <span>华南理工大学 2011-2015</span></li>
+                </li>
+                <li>
+                    <span>计算机软件 本科</span></li>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="skill info-unit">
+            <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">语言熟练度</span></h2>
+            <hr>
+            <ul class="progress-list">
+                <li>
+                    <label class="left-label">Java</label>
+                    <progress value="95" max="100"></progress>
+                </li>
+                <li>
+                    <label class="left-label">Javascript</label>
+                    <progress value="70" max="100"></progress>
+                </li>
+                <li>
+                    <label class="left-label">html/css</label>
+                    <progress value="60" max="100"></progress>
+                </li>
+
+                <li>
+                    <label class="left-label">Python</label>
+                    <progress value="50" max="100"></progress>
+                </li>
+            </ul>
+        </div>
+        <div class="stack info-unit">
+            <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+            <hr>
+            <ul class="stack-list">
+                <li>
+                    <label class="left-label">前端</label><span
+                        class="label-value">Webpack、React技术栈、jQuery、html、css</span></li>
+                </li>
+                <li>
+                    <label class="left-label">后端</label><span class="label-value">Spring Boot、SSM、Python、MongoDB、MySQL、Redis、Maven、Kafka、Dubbo</span>
+                </li>
+                </li>
+                <li>
+                    <label class="left-label">其它</label><span class="label-value">nginx、zookeeper、linux、tomcat</span>
+                </li>
+                </li>
+            </ul>
+        </div>
+
+        <div class="code info-unit">
+            <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">在校经历</span></h2>
+            <hr>
+            <ul class="stack-list">
+                <li>
+                    <span>“三星Galaxy杯”手机软件设计大赛　三等奖</span>
+                </li>
+                </li>
+                <li>
+                    <span>“深信服杯”软件设计大赛　三等奖</span>
+                </li>
+                <li>
+                    <span>2013~2014年　三等奖学金</span>
+                </li>
+                <li>
+                    <span>CET-6（英语六级）</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="contact info-unit">
+            <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+            <hr>
+            <ul class="info-list">
+                <li>
+                    <label class="left-label">手机(微信号)</label><span class="label-value">15302638224</span></li>
+                <li>
+                    <label class="left-label">邮箱</label><span class="label-value">qiongke@qq.com</span></li>
+                <li>
+                    <label class="left-label">个人主页</label><span class="label-value">www.wuqke.com</span></li>
+                <li>
+                    <label class="left-label">简书</label><span class="label-value">wuqke</span></li>
+
+                <li>
+                    <label class="left-label">Github</label><span class="label-value">github.com/wuqke</span></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="work info-unit right-list">
+            <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+            <hr>
+            <div class="company-div">2016.04-至今　　　中国平安金融科技有限公司　　　高级Java工程师</div>
+            <ul class="experience-list">
+                <li>
+                    <div class="sub-title">智能双录系统</div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>项目描述:</strong></div>
+                        <div class="sub-main">
+                            该系统用于金融公司的销售人员在销售金融理财产品的过程中进行同步录音录像，
+                            从而符合相关的监管要求规定。
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>负责角色:</strong></div>
+                        <div class="sub-main">后端(Java)开发及负责人</div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side">工作描述:</div>
+                        <div class="sub-main">负责双录系统后端的相关需求开发，流程设计及梳理，以及任务分配协调等工作。
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="sub-title">开放平台</div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>项目描述:</strong></div>
+                        <div class="sub-main">该平台用于管理多家银行后端代码分支及测试流程，规范流程，提升效率。
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>负责角色:</strong></div>
+                        <div class="sub-main">前端开发及负责人</div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side">工作描述:</div>
+                        <div class="sub-main">
+                            在该项目中负责搭建开放平台前端框架(使用React + React Router + Redux + Ant Design + Webpack),
+                            编写了该平台90%以上的前端代码(1.5w行左右)，并产出了相关前端架构说明和搭建的技术文档。
+                            (放在个人简书的后台小白前端入门系列文章里)
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="sub-title">直销银行APP</div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>项目描述:</strong></div>
+                        <div class="sub-main">
+                            为许多(如上海银行、广州银行等)银行开发直销银行。
+                            可以在直销银行app上开立电子账户，从而购买理财产品，进行三充值等消费行为。
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>负责角色:</strong></div>
+                        <div class="sub-main">后端(Java)开发,成本优化实施负责人</div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side">工作描述:</div>
+                        <div class="sub-main">
+                            完成银行的相关定制化任务，对银行线上金融业务有一定的了解。在对各个银行直销银行后端做成本优化的时候，
+                            作为实施负责人，在优化过程中对整个后端系统架构有全面的了解，同时排查解决在成本优化过程中出现的问题。
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="sub-title">MAC分布式调度系统</div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>项目描述:</strong></div>
+                        <div class="sub-main">
+                            公司Mac OS的服务器无法承担多个app的iOS符号表解析任务。所以通过本项目，可以充分利用起公司内部同事的Macbook个人主机来解析iOS符号表，缓解Mac
+                            OS服务器的解析压力。该项目也申请了国内专利，同时递交国际专利。
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>负责角色:</strong></div>
+                        <div class="sub-main">客户端(Python)开发</div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side">工作描述:</div>
+                        <div class="sub-main">
+                            使用Python语言负责该系统的客户端开发。独自承担并完成客户端的开发，同时负责编写相关的安装脚本及自启动脚本。
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+            <div class="company-div">2014.11-2016.3　　　　我趣旅行网（实习+正职）　　　　Java工程师</div>
+            <ul class="experience-list">
+                <li>
+                    <div class="sub-title">国际租车模块、签证模块</div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>项目描述:</strong></div>
+                        <div class="sub-main">为用户提供国际租车服务和申请签证中文服务。
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side"><strong>负责角色:</strong></div>
+                        <div class="sub-main">Java后端开发</div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="sub-side">工作描述:</div>
+                        <div class="sub-main">
+                            1.负责接入全球最大的汽车租赁公司Hertz，文档为全英API。成为国内第四家直连Hertz的公司。
                             <br/>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Flask 的主机监视系统</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li>                     
-            </div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+                            2.签证系统自助填写系统后端开发。
+                            <br/>
+                            3.租车全球各个城市热门地标数据爬取与解析，
+                            同时使用Google Geocoding API根据租车门店地址获取相关经纬度并入库。
+                            最后根据门店和地标的经纬度进行同城映射。
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="project info-unit right-list">
+            <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+            <hr>
+            <div class="company-div">聚英人才网</div>
+            <ul class="experience-list">
+                <li>
+                    <p>
+                        海南微软创新中心 · 在线孵化平台的参赛孵化项目
+                        <br/>
+                        项目使用Spring Boot进行开发，负责互联网大学、招聘会模块的后台开发。
+                        <br/>
+                        http://www.juying.site
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="project info-unit right-list">
+            <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+            <hr>
+            <p>
+                18年绩效评定为S(大部门研发排名前10%)
+                <br/>
+                性格开朗、待人随和、善于沟通。具有良好的编码习惯、逻辑思维和团队精神。
+                <br/>
+                一直在坚持学习英语，能较轻松地看懂英语技术文档和进行日常英语沟通。
+            </p>
         </div>
     </div>
+</div>
 </body>
-
 </html>
