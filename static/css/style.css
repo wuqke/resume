@@ -123,7 +123,7 @@ hr {
 body {
     background-color: lightslategray;
     font-family: sans-serif, Microsoft Yahei, Helvetica Neue;
-    zoom: 80%;
+    
 }
 
 footer {
@@ -204,9 +204,8 @@ progress::-moz-progress-value {
 .container {
     position: relative;
     margin: 0 auto;
-
     width: 1050px;
-    height: 1550px;
+    height: 1528px;
     background-color: white;
 
 }
