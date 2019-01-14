@@ -191,8 +191,8 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('../image/walle.jpg');
-    background-size: 120%;
+    background-image:url('../image/walle.jpeg');
+    background-size: 115%;
     background-position:center;
     border-radius:50%;
     border:5px solid #607d8b;
@@ -223,7 +223,7 @@ progress::-moz-progress-value {
 .main {
     
     position: relative;;
-    margin-left: 360px;
+    margin-left: 355px;
     min-height: 100%;
     padding: 20px;
 
